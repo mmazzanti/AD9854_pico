@@ -54,7 +54,7 @@ An [AOM](https://www.rp-photonics.com/acousto_optic_modulators.html "AOM") (Acou
 
 The typical resonating frequencies of AOM are between 70-300MHz although the coverage of this bandwith is mostly wavelength dependent.
 
-In my case I needed a signal at 150MHz and I appeared to have found some Eval-AD9854 boards in some "storage" around (what a lucky strike :blush: )
+In my case I needed a signal at 150MHz and I appeared to have found some Eval-AD9854 boards in some "storage" around (what a lucky find :blush: )
 
 
 ## Clocking the AD9854
