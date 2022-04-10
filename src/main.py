@@ -144,8 +144,8 @@ def SingleTone(freq):
     Init_AD9854(0x00)
     on(freq)
 
-def on(freq):
-    Set_freq(freq,1095,addrF1)
+def on(freq,ampl):
+    Set_freq(freq,ampl,addrF1)
     Update_CLK()
     led.on()
     
@@ -154,22 +154,22 @@ def off():
     led.off()
     trigger.off()
     
-def UFSK(freq1,freq2):
+def UFSK(freq1, freq2, ampl):
     fsk.off()
     Init_AD9854(0x2)
-    Set_freq(freq1,1095,addrF1)
+    Set_freq(freq1,ampl,addrF1)
     Set_freq(freq2,-1,addrF2)
     Update_CLK()
     led.on()
     
-def RUFSK(freq1,freq2,delta,N):
+def RUFSK(freq1, freq2, ampl, delta, N):
     fsk.off()
     Init_AD9854(0x4)
     Rst_ACC(2,0x4)
     # Sets Ramped FSK with triangle ramp shape
     if freq1 < freq2:
         # Set initial freq
-        Set_freq(freq1,1095,addrF1)
+        Set_freq(freq1,ampl,addrF1)
         # Set final freq
         Set_freq(freq2,-1,addrF2)
     else :
