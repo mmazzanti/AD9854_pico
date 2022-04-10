@@ -19,7 +19,8 @@ Lukily this is not the only interface for programming the evaluation board. A 40
 
 ![40_pins_port](/images/40_pins_port.jpg?raw=true "The 40 pins IDE port on the Eval-AD99854 board")
 
-This looks like a perfect match for any Raspberry Pi board! A custom cable from a Raspberry Pi 3/4 to the Eval-9854 board could be made (as I did for the first prototyping), or a better idea would be to design a PCB board that interfaces a Raspberry Pi with the DDS evaluation board.
+This looks like a perfect match for any Raspberry Pi board! A custom cable from a Raspberry Pi 3/4 to the Eval-9854 board could be made (as I did for the first prototyping), but this will require a cable per each DDS and a lot of soldering. 
+A better idea would be to design a PCB board that interfaces a Raspberry Pi with the DDS evaluation board.
 ## Why the Pico ? Can I use any Raspberry Pi ?
 
 Sure, any microcontroller capable of handling 21 digital pins can do the job. I decided on  a Raspberry Pico just because of its price tag and small form factor.
@@ -47,7 +48,7 @@ More precise description can be found on the AD9854 datasheet.
 
 <br/>
 
-My tipycal day usage of the AD9854 is to drive some AOM in our laboratory (check out here why we do that : [hyqs](http://hyqs.nl/ "Hyqs")).
+My tipycal day usage of the AD9854 is to drive some AOM in our laboratory (check out here why we want to do that : [hyqs](http://hyqs.nl/ "Hyqs")).
 <br/>
 <br/>
 An [AOM](https://www.rp-photonics.com/acousto_optic_modulators.html "AOM") (Acousto Optic Modulator) is nothing more than a cyrstal vibrating at a certain frequency capable of steering a laser beam and adding-subtracting its resonating frequency to the diffracting beam (read more here ).
