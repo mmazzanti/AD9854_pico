@@ -71,11 +71,12 @@ Various functions are available from the source script. These don't cover all th
 
 After connecting to the Pico the following functions are available from the serial terminal.
 
-- on(freq,ampl) : Turns on the AD9854 at the input frequency. freq must be declared in hertz. This corresponds to the single tone mode of the DDS. The amplitude of the signal can be selected with the "ampl" parameter [0-4095].
-- off() : Turns off the DDS output (sets it to the lowest amplitude)
-- UFSK(freq1, freq2, ampl) : Sets the AD9854 in FSK mode, the lowest frequency between freq1 and freq2 will be outputted immediately. To switch between the two frequencies one can use the Switch() function
+- SingleTone(freq,ampl) : Turns on the AD9854 at the input frequency. freq must be declared in hertz. This corresponds to the single tone mode of the DDS. The amplitude of the signal can be selected with the "ampl" parameter [0-4095].
+- on(freq,ampl) : To be used after initializing the DDS (by calling _SingleTone()_). Sets the output frequency and amplitude in single tone operational mode.
+- off() : Turns off the DDS output (sets it to the lowest amplitude).
+- UFSK(freq1, freq2, ampl) : Sets the AD9854 in FSK mode, the lowest frequency between freq1 and freq2 will be outputted immediately. To switch between the two frequencies one can use the Switch() function.
 - RUFSK(freq1, freq2, ampl, delta, N) : Switches between freq1 and freq2 going through a linear ramp between the two. This corresponds to the ramped-FSK mode of the DDS. N is the number of steps the counter will need before switching to the next frequency. The switching period is given by (N-1)*system_clock. "delta" is the frequency step incremented each time the counter reaches 0
-- Switch() : Switches between freq1 and freq2
+- Switch() : Switches between freq1 and freq2.
 
 ## No, I don't want to order your board!
 
