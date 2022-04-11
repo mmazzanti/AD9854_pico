@@ -92,9 +92,9 @@ def Init_AD9854(mode):
     #Set sysmode to 0x00 (no internal update clock!)
     WR_D_A(0x1f, mode)
     #OSK EN, Keep sinc filter enabled
-    #WR_D_A(0x20, 0x60)
+    #WR_D_A(0x20, 0x20)
     #OSK EN, disable sinc filter (300mA less current needed)
-    WR_D_A(0x20, 0x20)
+    WR_D_A(0x20, 0x60)
     Update_CLK()
 
 
@@ -140,9 +140,9 @@ def Set_ramprate(N):
     WR_D_A(0x1c, N)
     
 
-def SingleTone(freq):
+def SingleTone(freq,ampl):
     Init_AD9854(0x00)
-    on(freq)
+    on(freq,ampl)
 
 def on(freq,ampl):
     Set_freq(freq,ampl,addrF1)
@@ -174,7 +174,7 @@ def RUFSK(freq1, freq2, ampl, delta, N):
         Set_freq(freq2,-1,addrF2)
     else :
         # Set initial freq
-        Set_freq(freq2,1095,addrF1)
+        Set_freq(freq2,ampl,addrF1)
         # Set final freq
         Set_freq(freq1,-1,addrF2)
     # Set frequency step
