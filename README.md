@@ -1,5 +1,12 @@
 # PicoDDS
 A Raspberry Pico PCB board that can interface with the AD9854 (and similar others) DDS chips or evaluation boards through parallel port.
+
+# V1.0_beta (future release)
+This new version addresses one of the problems in the previous board (see release 0.9), the limit on the LDO current. The new version includes a LT1086 3.3V capable of up to 1.5A. This LDO version however is slightly obsolete, I would suggest to move to a LT1963A for future. At the moment I'm very satisfied with the version 0.9 and even if the LDO is at its limits and getting quite hot the board performs well since production (~ 4 months ago) in our lab.
+
+### Please use always the last firwmare code provided, this is independent on the board version and getting updated/fixed from time to time.
+
+# V0.9
 ## Why ?
 This project was inspired by the necessity of having a simple python/serial interface to easily control older DDS evaluation boards (e.g. the  Eval-AD9854 here described).
 

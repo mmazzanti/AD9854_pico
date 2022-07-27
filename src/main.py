@@ -151,6 +151,7 @@ def on(freq,ampl):
     
 def off():
     Set_freq(0,0,addrF1)
+    Update_CLK()
     led.off()
     trigger.off()
     

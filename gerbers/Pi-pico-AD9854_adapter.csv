@@ -1,0 +1,13 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"U2";"LT1086";1;"LT1086-3.3";;;
+2;"TP2,TP1";"TestPoint_THTPad_D2.0mm_Drill1.0mm";2;"TestPoint";;;
+3;"R1,R2";"R_0805_2012Metric";2;"5.1k";;;
+4;"J4";"PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal";1;"Screw_Terminal_01x02";;;
+5;"D1";"SMBJ5.0A-TR";1;"SMBJ5.0A-TR";;;
+6;"U3";"DMG2305UX-13";1;"DMG2305UX-13";;;
+7;"U1";"RPi_Pico_SMD_TH";1;"Pico";;;
+8;"R3";"R_0805_2012Metric";1;"0";;;
+9;"J2";"HRO_TYPE-C-31-M-12";1;"TYPE-C-31-M-12";;;
+10;"C2,C1";"CP_EIA-2012-12_Kemet-R";2;"10uF";;;
+11;"J3";"Pin_D1.0mm_L10.0mm";1;"Conn_01x01_Male";;;
+12;"J1";"IDC-Header_2x20_P2.54mm_Vertical";1;"Conn_02x20_Odd_Even";;;
